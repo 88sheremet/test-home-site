@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hounter</title>
+    <title>Hounter Landing Site</title>
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
@@ -12,7 +12,10 @@
         <header class="header" id="header">
             <div class="header__container">
                 <div class="header__logo">
-                    <img src="./img/logo.svg" alt="logo" class="header__logo_img">
+                    <!-- <img src="./img/logo.svg" alt="logo" class="header__logo_img"> -->
+                    <svg  width="36" height="36">
+                        <use href="./img/sprite.svg#icon-logo"></use>
+                      </svg>
                     <p class="header__logo_title">Hounter</p>
                 </div>
                 <nav class="header__menu">
@@ -20,17 +23,23 @@
                         <li class="header__menu_item click"><a href="#" class="header__menu_link">About Us</a></li>
                         <li class="header__menu_item click"><a href="#" class="header__menu_link">Article</a></li>
                         <li class="header__menu_item spoiler">
-                            <a href="#" class="header__menu_link">Property</a>
-                            <div class="header__menu_more">
+                            <select name="" id="" class="header_nav__select">
+                                <option value="" selected >Property</option>
+                                <option value="" >House</option>
+                                <option value="" >Villa</option>
+                                <option value="" >Apartment</option>
+                              </select>
+                            <!-- <a href="#" class="header__menu_link">Property</a> -->
+                            <!-- <div class="header__menu_more">
                                 <span class="heeder-menu-more__line"></span>
                                 <span class="heeder-menu-more__line"></span>
-                            </div>
-                            <ul class="header__sub-menu">
+                            </div> -->
+                            <!-- <ul class="header__sub-menu">
                                 <li class="header__sub-menu_item click"><a href="#" class="header__sub-menu_link">Lorem</a></li>
                                 <li class="header__sub-menu_item click"><a href="#" class="header__sub-menu_link">Ipsum</a></li>
                                 <li class="header__sub-menu_item click"><a href="#" class="header__sub-menu_link">Dolor</a></li>
                                 <li class="header__sub-menu_item click"><a href="#" class="header__sub-menu_link">Sit</a></li>
-                            </ul>
+                            </ul> -->
                         </li>
                     </ul>
                 </nav>
@@ -51,7 +60,7 @@
                 <div class="find__container">
                     <div class="find__article">
                         <h1 class="find__title title">
-                            Find The Place To Live   <span class="border__txt">Dreams</span> Easily Here
+                            Find The Place To Live   <span class="border__txt"> Your Dreams</span> Easily Here
                         </h1>
                         <p class="find__paragraph paragraph">
                             Everything you need about finding your place to live will be here, where it will be easier for you
@@ -74,7 +83,7 @@
                     </div>
                     <div class="find__image">
                         <img src="./img/main__find/hero-image.png" alt="" class="find__image-img">
-                        <div class="find__slider">
+                        <!-- <div class="find__slider">
                             <a href="#" class="slider__item slider-item">
                                 <img src="./img/find__slider/Manhattan Style.png" class="slider-item__img">
                                 <div class="slider-item__article slider-article">
@@ -123,7 +132,7 @@
                                     </span>
                                 </div>
                             </a>
-                        </div>
+                        </div> -->
                     </div>
                     <img src="./img/main__find/Color Blur.svg" class="find__decor">
                 </div>
