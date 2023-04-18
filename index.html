@@ -10,9 +10,10 @@
 <body>
     <div class="wrapper">
         <header class="header" id="header">
+            <img src="./img/ColorBlur.png" alt="" class="header__image" />
             <div class="header__container">
                 <div class="header__logo">
-                    <!-- <img src="./img/logo.svg" alt="logo" class="header__logo_img"> -->
+                 
                     <svg  width="36" height="36">
                         <use href="./img/sprite.svg#icon-logo"></use>
                       </svg>
@@ -29,17 +30,7 @@
                                 <option value="" >Villa</option>
                                 <option value="" >Apartment</option>
                               </select>
-                            <!-- <a href="#" class="header__menu_link">Property</a> -->
-                            <!-- <div class="header__menu_more">
-                                <span class="heeder-menu-more__line"></span>
-                                <span class="heeder-menu-more__line"></span>
-                            </div> -->
-                            <!-- <ul class="header__sub-menu">
-                                <li class="header__sub-menu_item click"><a href="#" class="header__sub-menu_link">Lorem</a></li>
-                                <li class="header__sub-menu_item click"><a href="#" class="header__sub-menu_link">Ipsum</a></li>
-                                <li class="header__sub-menu_item click"><a href="#" class="header__sub-menu_link">Dolor</a></li>
-                                <li class="header__sub-menu_item click"><a href="#" class="header__sub-menu_link">Sit</a></li>
-                            </ul> -->
+                           
                         </li>
                     </ul>
                 </nav>
@@ -55,8 +46,92 @@
                 </div>
             </div>
         </header>
-        <main class="main">
-            <section class="main__find">
+        <main >
+
+
+            <section class="hero">
+                <img
+                  src="./img/Img.png"
+                  alt=""
+                  class="hero__image"
+                  width="720px"
+                  height="720px"
+                />
+                <h1 class="hero__title">
+                  find the place to live <span>your dreams</span> easily here
+                </h1>
+                <p class="hero__description">
+                  Everything you need about finding your place to live will be here,
+                  where it will be easier for you
+                </p>
+                <div class="input-container">
+                  <input
+                    type="text"
+                    class="hero__input"
+                    placeholder="Search for the location you want!"
+                  />
+                  <svg width="24" height="24" class="input-icon">
+                    <use href="./img/sprite.svg#icon-location"></use>
+                  </svg>
+                  <button class="search-button">
+                    Search
+                    <svg class="list__icon" width="24" height="24">
+                      <use href="./img/sprite.svg#icon-arrow-right"></use>
+                    </svg>
+                  </button>
+                </div>
+                <p class="hero__partners">Our Partnership</p>
+                <div class="partners-images">
+                  <img src="./img/traveloka2.png" alt="" />
+                  <img src="./img/traveloka4.png" alt="" />
+                  <img src="./img/traveloka3.png" alt="" />
+                  <img src="./img/traveloka1.png" alt="" />
+                </div>
+        
+                <div id="slider">
+                  <div id="polosa">
+                    <div class="polosa-container">
+                      <img src="./img/hero1.png" alt="" class="image-one" />
+                      <div class="description-wrapper">
+                        <p>1K+ People</p>
+                        <p>Successfully Getting Home</p>
+                      </div>
+                    </div>
+                    <div class="polosa-container-2">
+                      <img src="./img/hero2.png" alt="" />
+                      <div class="description-wrapper">
+                        <p>56 Houses</p>
+                        <p>Sold Monthly</p>
+                      </div>
+                    </div>
+                    <div class="polosa-container-3">
+                      <img src="./img/hero3.png" alt="" />
+                      <div class="description-wrapper">
+                        <p>4K+</p>
+                        <p>People Looking for New Homes</p>
+                      </div>
+                    </div>
+                    <div class="polosa-container-2">
+                      <img src="./img/hero2.png" alt="" />
+                      <div class="description-wrapper">
+                        <p>56 Houses</p>
+                        <p>Sold Monthly</p>
+                      </div>
+                    </div>
+                    <div class="polosa-container-3">
+                      <img src="./img/hero3.png" alt="" />
+                      <div class="description-wrapper">
+                        <p>4K+</p>
+                        <p>People Looking for New Homes</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+
+
+            <!-- <section class="main__find">
                 <div class="find__container">
                     <div class="find__article">
                         <h1 class="find__title title">
@@ -81,8 +156,48 @@
                             </ul>
                         </nav>
                     </div>
-                    <div class="find__image">
+                   
                         <img src="./img/main__find/hero-image.png" alt="" class="find__image-img">
+                        <div id="slider">
+                            <div id="polosa">
+                              <div class="polosa-container">
+                                <img src="./img/hero1.png" alt="" class="image-one" />
+                                <div class="description-wrapper">
+                                  <p>1K+ People</p>
+                                  <p>Successfully Getting Home</p>
+                                </div>
+                              </div>
+                              <div class="polosa-container-2">
+                                <img src="./img/hero2.png" alt="" />
+                                <div class="description-wrapper">
+                                  <p>56 Houses</p>
+                                  <p>Sold Monthly</p>
+                                </div>
+                              </div>
+                              <div class="polosa-container-3">
+                                <img src="./img/hero3.png" alt="" />
+                                <div class="description-wrapper">
+                                  <p>4K+</p>
+                                  <p>People Looking for New Homes</p>
+                                </div>
+                              </div>
+                              <div class="polosa-container-2">
+                                <img src="./img/hero2.png" alt="" />
+                                <div class="description-wrapper">
+                                  <p>56 Houses</p>
+                                  <p>Sold Monthly</p>
+                                </div>
+                              </div>
+                              <div class="polosa-container-3">
+                                <img src="./img/hero3.png" alt="" />
+                                <div class="description-wrapper">
+                                  <p>4K+</p>
+                                  <p>People Looking for New Homes</p>
+                                </div>
+                              </div>
+                            </div>
+                          </div> -->
+                       
                         <!-- <div class="find__slider">
                             <a href="#" class="slider__item slider-item">
                                 <img src="./img/find__slider/Manhattan Style.png" class="slider-item__img">
@@ -133,10 +248,10 @@
                                 </div>
                             </a>
                         </div> -->
-                    </div>
-                    <img src="./img/main__find/Color Blur.svg" class="find__decor">
+                
+                    <!-- <img src="./img/main__find/Color Blur.svg" class="find__decor">
                 </div>
-            </section>
+            </section> -->
             <section class="main__featured">
                 <div class="featured__container">
                     <div class="featured__head">
@@ -518,7 +633,11 @@
                         </div>
                     </div>
                     <div class="tour__images">
-                        <iframe class="tour__video" width="560" height="315" src="https://www.youtube.com/embed/7ns06N1Q6Lk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <div class="tour__slider">
+                            <img src="./img/readytoseil.png" alt="">
+                            <img src="./img/readytoseil.png" alt="">
+                        </div>
+                        <!-- <iframe class="tour__video" width="560" height="315" src="https://www.youtube.com/embed/7ns06N1Q6Lk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         <ul class="tour__images-list">  
                             <img src="./img/main__tour/interier1.jpg" alt="sofa" class="tour__img">
                             <div class="image__list-other">
@@ -527,7 +646,7 @@
                             </div>
                         </ul>
                         <img src="./img/main__tour/red-decor.svg" class="tour__decor tour-decor__red">
-                        <img src="./img/main__tour/yellow-decor.svg" class="tour__decor tour-decor__yellow">        
+                        <img src="./img/main__tour/yellow-decor.svg" class="tour__decor tour-decor__yellow">         -->
                     </div>
                 </div>
             </section>
@@ -786,6 +905,7 @@
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="js/slick.min.js"></script>
+    <script src="./js/index.js"></script>
     <script src="./js/slick.js"></script>
     <script src="./js/burger.js"></script>
     <script src="./js/categoryes.js"></script>
