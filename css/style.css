@@ -1070,6 +1070,13 @@ body {
   padding-left: 120px;
   width: 496px;
 }
+/* @media (max-width: 1200px) {
+  .hero__image {
+    display: none;
+  }
+} */
+
+
 
 .hero__image {
   position: absolute;
@@ -1086,7 +1093,8 @@ body {
   text-transform: capitalize;
   color: #1b1c57;
   margin-top: 96px;
- 
+  z-index: 10;
+  position: relative;
 }
 
 .hero__description {
@@ -1109,6 +1117,8 @@ body {
   border: 1px solid #e0e3eb;
   border-radius: 32px;
 }
+
+
 
 .hero__input::placeholder {
   color: #888b97;
@@ -1147,9 +1157,57 @@ body {
   left: 102%;
 }
 
+@media (max-width: 1279px) {
+
+}
+
+@media (max-width: 1338px) {
+  .hero__input {
+    width: 396px;
+  }
+  .search-button {
+    display: flex;
+  
+    align-items: center;
+    padding: 12px 16px;
+    gap: 4px;
+  
+    width: 109px;
+    height: 48px;
+    background: #10b981;
+    border-radius: 32px;
+    font-family: "Lexend";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 22px;
+    color: #ffffff;
+    position: absolute;
+    top: 6.5%;
+    left: 75%;
+  }
+  .hero__input::placeholder {
+    color: #888b97;
+    font-family: "Lexend";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+  }
+}
+
 .input-container {
   position: relative;
 }
+
+@media (max-width: 555px) {
+  .input-container {margin-left: -100px;}
+  .search-button{
+    left: 59%;
+  }
+}
+
+
 
 .hero__partners {
   font-family: "Lexend";
@@ -1171,6 +1229,21 @@ body {
   margin-bottom: 212px;
 }
 
+@media (max-width: 1279px) {
+ .partners-images{
+   gap:4px;
+  }
+  
+}
+
+@media (max-width: 1339px) {
+  #slider {
+    display: none;
+  }
+  /* .input-container {
+    margin-left: -100px;
+  } */
+}
 
 
 #slider {
@@ -1974,6 +2047,8 @@ padding-top: 15px;
   }
 }
 
+
+
 .tour__images {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1982,6 +2057,22 @@ padding-top: 15px;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.tour__images::after{
+  content: '';
+
+    position: absolute;
+  width: 438px;
+  height: 494px;
+  left: 1593px;
+  top: 1574px;
+  
+  background: #FFFA82;
+  opacity: 0.3;
+  filter: blur(60px);
+  transform: rotate(90deg);
+  
 }
 
 .tour__images {
@@ -2019,6 +2110,7 @@ position: relative;
 
 
   }
+
   .tour__images .tour__images-list {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -2093,6 +2185,12 @@ position: relative;
 .tour__decor {
   position: absolute;
   z-index: -1;
+}
+
+@media (max-width: 1000px) {
+  .tour__images {
+    display: none;
+  }
 }
 @media screen and (max-width: 991.98px) {
   .tour__decor {

@@ -18,27 +18,24 @@ function sliderLeft() {
   
 }
 
-
-
   // 3 slider
 
-//   autoTourSlider();
+  autoTourSlider();
 
-// let leftTour = 0;
+let leftTour = 0;
 
-// function autoTourSlider() {
-//   let timerTour;
-//   timerTour = setTimeout(sliderTourLeft, 5000);
-// }
+function autoTourSlider() {
+  let timerTour;
+  timerTour = setTimeout(sliderTourLeft, 5000);
+}
 
-// function sliderTourLeft() {
-//   let sliderTour = document.querySelector(".tour__slider");
-// console.log(sliderTour)
-//   leftTour = leftTour - 528;
-//   if (leftTour < -1056) {
-//     leftTour = 0;
-//   }
-//   sliderTour.style.left = leftTour + "px";
-//   autoTourSlider();
+function sliderTourLeft() {
+  let sliderTour = document.querySelector(".tour__slider");
+  leftTour = leftTour - 264;
+  if (leftTour < -1056) {
+    leftTour = 0;
+  }
+  sliderTour.style.left = leftTour + "px";
+  autoTourSlider();
   
-// }
+}
