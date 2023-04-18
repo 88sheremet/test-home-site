@@ -15,12 +15,11 @@ function sliderLeft() {
   }
   polosa.style.left = left + "px";
   autoSlider();
-  
 }
 
-  // 3 slider
+// 2 slider
 
-  autoTourSlider();
+autoTourSlider();
 
 let leftTour = 0;
 
@@ -37,5 +36,4 @@ function sliderTourLeft() {
   }
   sliderTour.style.left = leftTour + "px";
   autoTourSlider();
-  
 }
